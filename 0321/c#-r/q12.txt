@@ -1,0 +1,43 @@
+using System;
+
+class q12
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("연산 >> ");
+        double num1 = double.Parse(Console.ReadLine());
+        string op = Console.ReadLine();
+        double num2 = double.Parse(Console.ReadLine());
+
+        double result = 0.0;
+
+        if (op == "+")
+        {
+            result = num1 + num2;
+        }
+        else if (op == "-")
+        {
+            result = num1 - num2;
+        }
+        else if (op == "*")
+        {
+            result = num1 * num2;
+        }
+        else if (op == "/")
+        {
+            if (num2 == 0)
+            {
+                Console.WriteLine("0으로 나눌 수 없습니다.");
+                return;
+            }
+            result = num1 / num2;
+        }
+        else
+        {
+            Console.WriteLine("올바른 연산자가 아닙니다.");
+            return;
+        }
+
+        Console.WriteLine($"{num1} {op} {num2}의 계산 결과는 {result}");
+    }
+}

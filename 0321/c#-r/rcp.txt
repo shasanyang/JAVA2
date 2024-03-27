@@ -1,0 +1,41 @@
+using System;
+
+class rcp
+{
+    static void Main(string[] args)
+    {
+        string[] str = { "가위", "바위", "보" };
+        Random random = new Random();
+
+        while (true)
+        {
+            Console.Write("가위바위보 대결 : ");
+            string user = Console.ReadLine();
+
+            if (user == "종료")
+            {
+                break;
+            }
+
+            int n = random.Next(3);
+            string computer = str[n];
+            Console.WriteLine($"유저 : {user} / 컴퓨터 : {computer}");
+
+            if (user == computer)
+            {
+                Console.WriteLine("비김");
+            }
+            else if ((user == "가위" && computer == "보") ||
+                     (user == "바위" && computer == "가위") ||
+                     (user == "보" && computer == "바위"))
+            {
+                Console.WriteLine("유저 승리");
+            }
+            else
+            {
+                Console.WriteLine("컴퓨터 승리");
+            }
+        }
+        Console.WriteLine("종료");
+    }
+}

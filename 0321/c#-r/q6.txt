@@ -1,0 +1,23 @@
+using System;
+
+class q6
+{
+    static void Main(string[] args)
+    {
+        Console.Write("1~99 사이 정수 입력 >> ");
+        int num = int.Parse(Console.ReadLine());
+
+        if ((num / 10 == 3) && (num % 10 == 3 || num % 10 == 6 || num % 10 == 9))
+        {
+            Console.WriteLine("박수짝!짝!");
+        }
+        else if (num % 10 == 3 || num % 10 == 6 || num % 10 == 9)
+        {
+            Console.WriteLine("박수짝!");
+        }
+        else
+        {
+            Console.WriteLine(num);
+        }
+    }
+}

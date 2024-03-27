@@ -1,0 +1,19 @@
+using System;
+
+class q3
+{
+    static void Main(string[] args)
+    {
+        int[] unit = { 50000, 10000, 1000, 500, 100, 50, 10, 1 };
+
+        Console.Write("금액 입력 : ");
+        int money = int.Parse(Console.ReadLine());
+
+        foreach (int u in unit)
+        {
+            int count = money / u;
+            money %= u;
+            Console.WriteLine(u + "원 짜리 : " + count + "개");
+        }
+    }
+}

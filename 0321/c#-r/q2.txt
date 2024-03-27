@@ -1,0 +1,29 @@
+using System;
+
+class q2
+{
+    static void Main(string[] args)
+    {
+        Console.Write("2자리수 정수 입력(10~99) >> ");
+        int num = int.Parse(Console.ReadLine());
+
+        if (num >= 10 && num <= 99)
+        {
+            int tensDigit = num / 10;
+            int onesDigit = num % 10;
+
+            if (tensDigit == onesDigit)
+            {
+                Console.WriteLine("10의 자리와 1의 자리가 같습니다.");
+            }
+            else
+            {
+                Console.WriteLine("10의 자리와 1의 자리가 다릅니다.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("잘못된 입력입니다. 2자리수 정수를 입력해주세요.");
+        }
+    }
+}

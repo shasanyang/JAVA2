@@ -1,0 +1,20 @@
+using System;
+
+class q7
+{
+    static void Main(string[] args)
+    {
+        Console.Write("점 (x,y)의 좌표를 입력하시오 >> ");
+        int x = int.Parse(Console.ReadLine());
+        int y = int.Parse(Console.ReadLine());
+        
+        if (x > 100 && x < 200 && y > 100 && y < 200)
+        {
+            Console.WriteLine($"({x},{y})는 사각형 안에 있습니다.");
+        }
+        else
+        {
+            Console.WriteLine($"({x},{y})는 사각형 안에 없습니다.");
+        }
+    }
+}

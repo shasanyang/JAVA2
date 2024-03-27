@@ -1,0 +1,28 @@
+using System;
+
+class q4
+{
+    static void Main(string[] args)
+    {
+        Console.Write("정수 3개 입력 >> ");
+        int i1 = int.Parse(Console.ReadLine());
+        int i2 = int.Parse(Console.ReadLine());
+        int i3 = int.Parse(Console.ReadLine());
+        
+        int middle;
+
+        if ((i1 >= i2 && i1 <= i3) || (i1 <= i2 && i1 >= i3))
+        {
+            middle = i1;
+        }
+        else if ((i2 >= i1 && i2 <= i3) || (i2 <= i1 && i2 >= i3))
+        {
+            middle = i2;
+        }
+        else
+        {
+            middle = i3;
+        }
+        Console.WriteLine(middle);
+    }
+}

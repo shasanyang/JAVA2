@@ -1,0 +1,14 @@
+using System;
+
+class q1
+{
+    static void Main(string[] args)
+    {
+        Console.Write("원화를 입력하세요(단위 원) >> ");
+        int won = int.Parse(Console.ReadLine());
+        
+        double dollar = won / 1100.0;
+
+        Console.WriteLine($"{won}원은 ${dollar:F1}입니다.");
+    }
+}

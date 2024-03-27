@@ -1,0 +1,66 @@
+using System;
+
+class q5
+{
+    static void Main(string[] args)
+    {
+        Console.Write("정수 3개 입력 >> ");
+        int x = int.Parse(Console.ReadLine());
+        int y = int.Parse(Console.ReadLine());
+        int z = int.Parse(Console.ReadLine());
+        
+        int max, mid, min;
+
+        if (x > y)
+        {
+            if (y > z)
+            {
+                max = x;
+                mid = y;
+                min = z;
+            }
+            else if (z > x)
+            {
+                max = z;
+                mid = x;
+                min = y;
+            }
+            else
+            {
+                max = y;
+                mid = z;
+                min = x;
+            }
+        }
+        else
+        {
+            if (x > z)
+            {
+                max = y;
+                mid = x;
+                min = z;
+            }
+            else if (z > y)
+            {
+                max = z;
+                mid = y;
+                min = x;
+            }
+            else
+            {
+                max = y;
+                mid = z;
+                min = x;
+            }
+        }
+
+        if (max < mid + min)
+        {
+            Console.WriteLine("삼각형");
+        }
+        else
+        {
+            Console.WriteLine("삼각형이 안됨");
+        }
+    }
+}

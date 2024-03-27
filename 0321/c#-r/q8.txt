@@ -1,0 +1,31 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("첫 번째 점 : ");
+        int x1 = int.Parse(Console.ReadLine());
+        int y1 = int.Parse(Console.ReadLine());
+        Console.Write("두 번째 점 : ");
+        int x2 = int.Parse(Console.ReadLine());
+        int y2 = int.Parse(Console.ReadLine());
+
+        if (InRect(x1, y1, 100, 100, 200, 200))
+        {
+            Console.WriteLine("두 직사각형 충돌함");
+        }
+        else
+        {
+            Console.WriteLine("두 직사각형 충돌하지 않음");
+        }
+    }
+
+    public static bool InRect(int x, int y, int rectx1, int recty1, int rectx2, int recty2)
+    {
+        if ((x >= rectx1 && x <= rectx2) && (y >= recty1 && y <= recty2))
+            return true;
+        else
+            return false;
+    }
+}

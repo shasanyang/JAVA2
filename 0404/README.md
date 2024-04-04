@@ -8,3 +8,11 @@ bookarray
 valuepassing
 referencepassing
 other
+
+* 패키지 public, private, protected
+* 상속 extend
+p - b,c
+q - a
+randex
+ex
+calcex

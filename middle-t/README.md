@@ -47,6 +47,7 @@
 5. break와 continue로 간단한 예제 프로그램 작성
 
 6. 업캐스팅, 다운캐스팅을 오브젝트로 받아서 처리하는 예제 프로그램 작성
+
 namespace ConsoleApp6
 {
     internal class Program
@@ -93,7 +94,7 @@ namespace ConsoleApp6
     }
 }
 
-7. 인의예지신과 중도에 기술
+8. 인의예지신과 중도에 기술
 인 : 측은지심
 의 : 수오지심
 예 : 사양지심
